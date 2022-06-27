@@ -1,12 +1,15 @@
 body {
   margin: 0;
-  text-align: center; /**/
+  text-align: center;
+  /**/
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
-  width: 20%; /*width를 적용하면 text-align이 적용되지 않아 margin으로 정렬*/
-  margin : 0 auto 0 auto; /*top right bottom left*/
+  width: 20%;
+  /*width를 적용하면 text-align이 적용되지 않아 margin으로 정렬*/
+  margin: 0 auto 0 auto;
+  /*top right bottom left*/
   font-family: 'Sacramento', cursive;
 }
 
@@ -14,7 +17,7 @@ h2 {
   font-family: 'Sacramento', cursive;
 }
 
-h3{
+h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -22,16 +25,37 @@ span {
   text-decoration: underline;
 }
 
+table {
+  margin: 100px auto 100px auto;
+}
+
+ul {
+  display: inline-block;
+}
+
+a img {
+  filter: grayscale();
+  transition: filter 0.4s ease-in-out;
+}
+
+a:hover img {
+  filter: none;
+}
+
 .top-container {
   background-color: #354259;
-  position: relative; /*top-container의 디폴트 위치에서 padding-top을 100px 설정*/
+  position: relative;
+  /*top-container의 디폴트 위치에서 padding-top을 100px 설정*/
   padding-top: 100px;
 }
 
 .top-cloud {
-  position: absolute; /*absolute로 설정하여 top-container와 같은 라인에 위치*/
-  right: 300px; /*top-container div의 오른쪽으로부터 300px 여백 생기게 */
-  top: 50px; /*top-container div의 윗쪽으로부터 50px 여백 생기게 */
+  position: absolute;
+  /*absolute로 설정하여 top-container와 같은 라인에 위치*/
+  right: 300px;
+  /*top-container div의 오른쪽으로부터 300px 여백 생기게 */
+  top: 50px;
+  /*top-container div의 윗쪽으로부터 50px 여백 생기게 */
 }
 
 .bottom-cloud {
@@ -40,32 +64,10 @@ span {
   bottom: 300px;
 }
 
-.middle-container {
+.middle-container {}
 
-}
-
-.bottom-container {
-
-}
-
-table{
-margin: 100px auto 100px auto;
-}
-
-
-
-ul{
-  display: inline-block;
-}
+.bottom-container {}
 
 .skill-row2 {
   margin-top: 100px;
-}
-
-a img {
-  filter: grayscale();
-  transition: filter 0.4s ease-in-out;
-}
-a:hover img{
-  filter: none;
 }
